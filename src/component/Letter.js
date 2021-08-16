@@ -30,7 +30,7 @@ const formatLetter = (props) => {
     [
       `<p class="letter endline">  <a href=${props["url"]}> ${props["title"]} </a>, written by <span class=author> ${props["author"]} </span> </p>  `,
       // `<div class="letter endline" style="font-size:0.5em;">Icons made by <a href="https://www.flaticon.com/authors/nhor-phai" title="Nhor Phai">Nhor Phai</a></div> <br>`,
-      //`<div class="letter endline" style="font-size:0.8em;">Made with 💖 by <a href="https://www.linkedin.com/in/gautier-arcin-309405145/" title="Gautier Arcin">Gautier Arcin</a>. Icons made by <a href="https://www.flaticon.com/authors/nhor-phai" title="Nhor Phai">Nhor Phai</a>.</div>`,
+      `<div class="letter endline" style="font-size:0.8em;">Made with 💖 by <a href="https://www.gautierarcin.com/" title="Gautier Arcin">Gautier Arcin</a>. Icons made by <a href="https://www.flaticon.com/authors/nhor-phai" title="Nhor Phai">Nhor Phai</a>.</div>`,
     ],
   ];
   return stringToReturn;
@@ -61,7 +61,7 @@ const letterToSequence = ({
             "hidden";
         });
         instance.type(formatedLetter[i][0]);
-        // instance.type(formatedLetter[i][1]);
+        instance.type(formatedLetter[i][1]);
         instance.break();
         instance.break();
         instance.break();
